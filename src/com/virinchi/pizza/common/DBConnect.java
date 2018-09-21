@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class DBConnect {
 
-    static Connection con=null;
+    public static Connection con=null;
     private String driver;
     private String connectionString;
     private String uname;
