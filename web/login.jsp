@@ -47,7 +47,7 @@
 <div id="wrapper">
     <div id="login-content-wrapper">
         <div class="row">
-            <div class="col-sm-7">
+            <div class="hidden-xs col-sm-7">
                 <div class="dark-bg">
                     <div class="container-fluid">
                         <div class="space"></div>
@@ -100,6 +100,12 @@
                             <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8">
                                 <form class="form-horizontal" method="post" action="here">
                                     <label><h1><b>Login</b></h1></label>
+                                    <% if(responseMsg != null){
+                                        %>
+                                    <p class="text-danger">Invalid Username/ Password</p>
+                                    <%
+                                    }
+                                    %>
                                     <div class="form-group">
                                         <div class="cols-sm-10">
                                             <div class="input-group">

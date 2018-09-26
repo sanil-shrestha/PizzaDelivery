@@ -7,6 +7,16 @@ public class UserDto {
     private String uName;
     private String password;
 
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    private int uid;
+
     public String getFirstName() {
         return firstName;
     }
